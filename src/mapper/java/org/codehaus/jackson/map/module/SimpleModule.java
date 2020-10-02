@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.codehaus.jackson.Version;
-import org.codehaus.jackson.map.*;
+import org.codehaus.jackson.map.Module;
+import org.codehaus.jackson.map.JsonDeserializer;
+import org.codehaus.jackson.map.JsonSerializer;
+import org.codehaus.jackson.map.KeyDeserializer;
 import org.codehaus.jackson.map.deser.ValueInstantiator;
 
 /**
