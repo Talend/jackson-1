@@ -100,7 +100,7 @@ test.run.interop, test.run.jaxrs, test.run.failing, test.run.versions"
     />
     <target name="test.run.main" depends="test.compile">
        <!-- showoutput 'yes' to allow outputting debug msgs... -->
-        <junit fork="no" printsummary="yes" haltonfailure="no" showoutput="yes">
+        <junit fork="no" printsummary="yes" haltonfailure="yes" showoutput="yes">
             <batchtest fork="no" todir="${dir.test.xmlresults}">
                 <fileset dir="${dir.test.classes}">
                     <!-- Need to exclude inner classes... -->
