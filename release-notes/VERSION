@@ -8,18 +8,8 @@ One more patch release for 1.9.
 === History: ===
 ------------------------------------------------------------------------
 
-1.9.14 (not yet released)
+1.9.15-TALEND (05-Oct-2020)
 
-#1: Set Secure Processing flag on DocumentBuilderFactory
-#4: JsonGenerator writeRawValue problem with surrogate UTF-8 characters
- (reported by Martin S)
-#5: Port deserialization security patch from jackson 2.x 
-* [databind#234]: Problems serializing types for deeply nested Maps.
-* [databind#1599]: Jackson Deserializer security vulnerability [CVE-2017-7525]
-* [databind#1680]: Blacklist couple more types for deserialization
-* [databind#1735]: Missing type checks when using polymorphic type ids
-* [databind#1737]: Block more JDK types from polymorphic deserialization [CVE 2017-15095]
-* [databind#1855]: Blacklist for more serialization gadgets (dbcp/tomcat, spring)
 * #1899: Another two gadgets to exploit default typing issue in jackson-databind (reported by OneSourceCat@github) - CVE-2018-5968 
 * #1931: Two more `c3p0` gadgets to exploit default typing issue - CVE-2018-7489
 * #2032: Blacklist another serialization gadget (ibatis) - CVE-2018-11307
@@ -67,6 +57,19 @@ One more patch release for 1.9.
 * #2826: Block one more gadget type (xxx, CVE-xxxx-xxx) (reported by ChenZhaojun)
 * #2827: Block one more gadget type (xxx, CVE-xxxx-xxx) (reported by ChenZhaojun)
 * #2854: Block one more gadget type (javax.swing, CVE-2020-xxx) (reported by Yangkun(ICSL))
+
+1.9.14-TALEND (10-Jan-2018)
+
+#1: Set Secure Processing flag on DocumentBuilderFactory
+#4: JsonGenerator writeRawValue problem with surrogate UTF-8 characters
+ (reported by Martin S)
+#5: Port deserialization security patch from jackson 2.x 
+* [databind#234]: Problems serializing types for deeply nested Maps.
+* [databind#1599]: Jackson Deserializer security vulnerability [CVE-2017-7525]
+* [databind#1680]: Blacklist couple more types for deserialization
+* [databind#1735]: Missing type checks when using polymorphic type ids
+* [databind#1737]: Block more JDK types from polymorphic deserialization [CVE 2017-15095]
+* [databind#1855]: Blacklist for more serialization gadgets (dbcp/tomcat, spring)
 
 1.9.13 (14-Jul-2013)
 
