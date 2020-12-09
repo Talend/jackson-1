@@ -30,6 +30,14 @@ public abstract class DOMDeserializer<T> extends FromStringDeserializer<T>
         } catch(ParserConfigurationException pce) {
             System.err.println("[DOMDeserializer] Problem setting SECURE_PROCESSING_FEATURE: " + pce.toString());
         }
+
+        // [databind#2589] add two more settings just in case
+        try {
+            _parserFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+        } catch (Throwable t) { } // as per previous one, nothing much to do
+        try {
+            _parserFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+        } catch (Throwable t) { } // as per previous one, nothing much to do
     }
 
     protected DOMDeserializer(Class<T> cls) { super(cls); }
