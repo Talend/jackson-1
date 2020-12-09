@@ -8,6 +8,10 @@ One more patch release for 1.9.
 === History: ===
 ------------------------------------------------------------------------
 
+1.9.16-TALEND (XX-XXX-XXXX)
+
+* #2589: `DOMDeserializer`: setExpandEntityReferences(false) may not prevent external entity expansion in all cases (CVE-2020-25649) (reported by Bartosz B)
+
 1.9.15-TALEND (05-Oct-2020)
 
 * #1899: Another two gadgets to exploit default typing issue in jackson-databind (reported by OneSourceCat@github) - CVE-2018-5968 
