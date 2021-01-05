@@ -11,6 +11,14 @@ One more patch release for 1.9.
 1.9.16-TALEND (XX-XXX-XXXX)
 
 * #2589: `DOMDeserializer`: setExpandEntityReferences(false) may not prevent external entity expansion in all cases (CVE-2020-25649) (reported by Bartosz B)
+* #2986: Block two more gadget types (commons-dbcp2, CVE-2020-35490/CVE-2020-35491)
+* #2996: Block 2 more gadget types (newrelic-agent) (reported by Al1ex@knownsec)
+* #2997: Block 2 more gadget types (tomcat/naming-factory-dbcp)
+* #2998: Block 2 more gadget types (org.apache.tomcat/tomcat-dbcp) (reported by Al1ex@knownsec)
+* #2999: Block 1 more gadget type (org.glassfish.web/javax.servlet.jsp.jstl, CVE-2020-35728) (reported by bu5yer of Sangfor FarSight Security Lab)
+* #3003: Block one more gadget type (xxx, CVE to be allocated)
+* #3004: Block one more DBCP-related potential gadget class (reported by Al1ex@knownsec)
+
 
 1.9.15-TALEND (05-Oct-2020)
 
